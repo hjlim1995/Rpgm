@@ -1,0 +1,6 @@
+setwd("c://data")
+kospi <- read.csv("kospi.csv")
+S <- read.csv("S_stock1.csv")
+H <- read.csv("H_stock1.csv")
+all_data <- merge(merge(kospi,S), H)
+head(all_data)
